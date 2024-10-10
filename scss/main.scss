@@ -1,0 +1,20 @@
+//fonts
+@import url(https://myfonts.ru/myfonts?fonts=mariupol);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800,900);
+@import url(https://fonts.cdnfonts.com/css/neutral-face);
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import './blocks/header';
+@import './blocks/home';
+@import './blocks/socials';
+@import './blocks/footer';
+@import './blocks/pay';
+@import './blocks/about';
+@import './blocks/popup';
+@import './blocks/techinc';

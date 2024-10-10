@@ -1,0 +1,139 @@
+.technic {
+    position: relative;
+
+    &__title {
+        font-family: "Neutral Face";
+        font-weight: 700;
+        font-size: rem(170);
+        line-height: 88%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #f1f1ef;
+        margin-bottom: 60px;
+    }
+
+    &__slider-container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__slide {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__butt {
+        cursor: pointer;
+        background: #c9a227;
+        padding: 41px 139px;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: #91751a;
+        }
+    }
+    
+    &__butt-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__link {
+        font-family: "Neutral Face";
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: 72%;
+        color: #f1f1ef;
+    }
+}
+
+.swiper-button-prev {
+    margin-left: 20px;
+
+    &::after {
+        content: '';
+    }
+}
+
+.swiper-wrapper {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button-next {
+    margin-right: 20px;
+
+    &::after {
+        content: '';
+    }
+}
+
+.swiper-pagination-bullet {
+    background: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #c9a227;
+    border-radius: 0px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #c9a227;
+}
+
+.technic__pag {
+    margin-bottom: 70px !important;
+}
+
+.technic__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+@media (max-width: 1250px) {
+    .technic {
+        &__title {
+            font-size: rem(80);
+            margin-bottom: 0px;
+        }
+    }
+
+    .swiper-wrapper {
+        height: 500px;
+    }
+}
+
+@media (max-width: 528px) {
+    .technic {
+        &__title {
+            font-size: rem(40);
+        }
+
+        &__butt {
+            padding: 30px 0px;
+            width: 100%;
+        }
+
+        &__link {
+            font-size: rem(16);
+        }
+    }
+
+    .swiper-button-prev img {
+        display: none;
+    }
+
+    .swiper-button-next img {
+        display: none;
+    }
+}

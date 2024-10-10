@@ -1,0 +1,108 @@
+.home {
+    padding: 237px 0px 280px 0px;
+    position: relative;
+
+    &__title {
+        font-family: 'Neutral Face';
+        font-weight: 700;
+        font-size: rem(88);
+        line-height: 170%;
+        color: #f1f1ef;
+        max-width: 400px;
+        margin-bottom: 42px;
+    }
+
+    &__button {
+        transition: all 0.2s linear;
+        cursor: pointer;
+        padding: 35px 64px;
+        position: relative;
+        display: inline-flex;
+        gap: 17px;
+        align-items: center;
+
+        &:hover {
+            background-color: #c9a227;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            bottom: 0px;
+            left: 0px;
+            border-bottom: 4px solid #c9a227;
+            border-left: 4px solid #c9a227;
+        }
+    
+        &::before {
+            content: '';
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 0px;
+            right: 0px;
+            border-top: 4px solid #c9a227;
+            border-right: 4px solid #c9a227;
+        }
+    }
+
+    &__link {
+        font-family: 'Neutral Face';
+        font-weight: 700;
+        font-size: rem(26);
+        line-height: 74%;
+        color: #fff;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 120px 0px;
+        text-align: center;
+
+        &__title {
+            max-width: none;
+            font-size: rem(60);
+            margin-bottom: 40px;
+        }
+
+        &__button {
+            padding: 20px 40px;
+
+            &::before {
+                border-width: 3px;
+            }
+
+            &::after {
+                border-width: 3px;
+            }
+        }
+
+        &__link {
+            font-size: rem(16);
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .home {
+        padding: 100px 0px;
+
+        &__title {
+            max-width: none;
+            font-size: rem(40);
+            margin-bottom: 30px;
+        }
+    }
+}
